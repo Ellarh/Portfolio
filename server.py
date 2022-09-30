@@ -10,8 +10,8 @@ import datetime
 import smtplib
 app = Flask(__name__)
 
-EMAIL = "emmandukwe26@gamil.com"
-PASSWORD = "brdlhybptydgnjqs"
+EMAIL = os.environ.get('EMAIL')
+PASSWORD = os.environ.get('EMAIL_P')
 
 @app.route("/")
 def home():
