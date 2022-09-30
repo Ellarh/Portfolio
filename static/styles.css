@@ -1,0 +1,471 @@
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+p{
+    font-family: 'Asap', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+   font-family: 'Tinos', serif;
+   letter-spacing: 5px;
+}
+
+hr{
+    border: dotted #5F7161 6px;
+    border-bottom: None;
+    width: 10%;
+    margin: 20px auto;
+}
+
+.heading{
+    text-align: center;
+    font-weight: 700;
+}
+
+
+/* Navigation Bar */
+#navigation-bar{
+    background-color: #D0C9C0;
+    padding: 2% 5%;
+    font-family: 'Asap', sans-serif;
+}
+
+.navbar-brand{
+    font-size: 25px;
+}
+
+/* Title Section */
+#title{
+    background-color: #D0C9C0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+
+.title-text{
+    font-family: 'Tinos', serif;
+    font-size: 60px;
+    text-align: center;
+    padding-top: 5%;
+     font-weight: 600;
+     letter-spacing: 3px;
+}
+
+.title-subtitle{
+    font-size: 30px;
+    font-family: 'Asap', sans-serif;
+    text-align: center;
+}
+
+/* Typewriter Animation */
+
+.wrapper{
+    display: flex;
+    justify-content:center;
+}
+
+.wrapper .static-text{
+    font-size: 40px;
+    font-weight: 500;
+    padding-top: 14px;
+    font-family: 'Asap', sans-serif;
+}
+
+.moving-text li{
+    position: relative;
+}
+
+.wrapper .moving-text{
+    line-height: 90px;
+    height: 90px;
+    overflow: hidden;
+    padding-left: 10px;
+}
+
+.moving-text li{
+    list-style-type: none;
+    text-align: center;
+    color: #5F7161;
+    font-size: 40px;
+    font-weight: 600;
+    top: 0;
+    font-family: 'Asap', sans-serif;
+    position: relative;
+    animation: slide 15s steps(5) infinite;
+}
+
+@keyframes slide{
+    100%{
+        top: -450px;
+    }
+}
+
+
+.moving-text li::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #D0C9C0;
+    border-left: 3px solid #5F7161;
+    animation: typing 3s steps(14) infinite;
+}
+
+@keyframes typing{
+    40%,
+    60%{
+        left: calc(100% + 30px)
+    }
+    100%{
+
+    }
+}
+
+/* Social Icons */
+
+.social-icons{
+    text-align: center;
+    padding-bottom: 10%;
+}
+
+.fa-brands{
+   color: black;
+   padding: 0 5px;
+}
+
+/* About Me Section */
+
+#about{
+    padding: 0 10%;
+}
+
+.about-top{
+    text-align: center;
+}
+
+.img-fluid{
+    width: 500%;
+}
+
+.contents{
+    color: #5F7161;
+    font-weight: 600;
+}
+
+.content-heading{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: #5F7161;
+}
+
+.content-body{
+    text-align: left;
+}
+
+
+.about-list{
+    list-style-type: none;
+    margin-bottom: 20px;
+    align-items: left;
+}
+
+ul{
+    padding-left: 0;
+}
+
+.fa-solid{
+    color: #5F7161;
+}
+
+/* Random Section */
+
+#random-section{
+    padding: 5% 7%;
+}
+.random-body{
+    text-align: left;
+}
+
+.random-item{
+    margin: 15px 0;
+}
+/* Skills Section */
+
+#skills-section{
+    padding: 10% 10%;
+}
+
+.content-title{
+    padding-left: 20px;
+}
+
+.container{
+    width: 100%;
+    height: 10vh;
+    background-color: #fff;
+    display: flex;
+}
+
+.skills{
+    padding-top: 20px;
+}
+
+.skill-row{
+    padding-top: 15px;
+}
+
+.progress-bar{
+    background-color: #EFEAD8;
+    width: 500px;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.progress-bar div{
+    height: 10px;
+    border-radius: 5px;
+    width: 10%;
+    background-color: #5F7161;
+}
+
+.details{
+    font-family: 'Asap', sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.html-skill, .css-skill, .python-skill, .content-skill, .microsoft-skill, .design-skill  span{
+    border: 1px solid #5F7161;
+}
+
+.html-skill{
+    animation: html-skill 1s linear forwards;
+}
+
+.css-skill{
+    animation: css-skill 1s linear forwards;
+}
+
+.python-skill{
+    animation: python-skill 1s linear forwards;
+}
+
+.content-skill{
+    animation: content-skill 1s linear forwards;
+}
+
+.microsoft-skill{
+    animation: microsoft-skill 1s linear forwards;
+}
+
+.design-skill{
+    animation: design-skill 1s linear forwards;
+}
+
+@keyframes html-skill {
+    100%{
+        width: 86%;
+    }
+}
+
+@keyframes css-skill {
+    100%{
+        width: 78%;
+    }
+}
+
+@keyframes python-skill {
+    100%{
+        width: 70%;
+    }
+}
+
+@keyframes content-skill {
+    100%{
+        width: 80%;
+    }
+}
+
+@keyframes microsoft-skill {
+    100%{
+        width: 67%;
+    }
+}
+
+@keyframes design-skill {
+    100%{
+        width: 85%;
+    }
+}
+
+/* Resume Section*/
+#resume{
+    padding: 0 3%;
+}
+
+.resume-text{
+    text-align: center;
+    padding: 0 10%;
+}
+
+.resume-title{
+    text-align: left;
+    letter-spacing: 0;
+    margin: 20px 0;
+    padding-left: 20%;
+}
+
+.vl-summary{
+     border-left: 3px solid #5F7161;
+      height: 220px;
+      position: absolute;
+      left: 11%;
+      margin-left: -3px;
+      top: 363%;
+}
+
+.resume-items{
+    text-align: left;
+    padding-left: 20%;
+}
+
+.resume-list{
+    padding-left: 15px;
+}
+
+.resume-heading{
+    letter-spacing: 0;
+}
+
+.resume-title-education{
+    text-align: left;
+    letter-spacing: 0;
+    margin: 40px 0 20px 0;
+    padding-left: 20%;
+}
+
+.resume-title-experience{
+    text-align: left;
+    letter-spacing: 0;
+    margin: 28px 0 18px 0;
+    padding-left: 20%;
+}
+
+.vl-education{
+      border-left: 3px solid #5F7161;
+      height: 500px;
+      position: absolute;
+      left: 11%;
+      margin-left: -3px;
+      top: 415%;
+}
+
+.ella{
+    color: #5F7161;
+}
+
+.vl-experience{
+     border-left: 3px solid #5F7161;
+      height: 800px;
+      position: absolute;
+      left: 8%;
+      margin-left: 51%;
+      top: 363%;
+}
+
+.blog-link{
+    text-decoration: none;
+    color: #5F7161;
+}
+
+/* Contact Me */
+#contact{
+    padding-top: 50px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.forms{
+   text-align: center;
+}
+
+.text-input{
+    height: 200px;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 10px;
+}
+
+
+.form-control{
+    width: 50%;
+    margin-left: 25%;
+}
+
+.form-button{
+    background-color: #5F7161;
+    color: #fff;
+    margin-top: 10px;
+    font-family: 'Asap', sans-serif;
+    border-radius: 10%;
+
+}
+
+/* Footer */
+
+#footer{
+     padding: 5% 10%;
+     background-color: #D0C9C0;
+     text-align: center;
+}
+
+.footer-name{
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.footer-icon{
+    color: #5F7161;
+}
+
+.social-icons-footer{
+    padding: 20px 0;
+}
+
+.fa-solid{
+     color: #5F7161;
+     padding: 0 5px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 916px){
+    .vl-experience{
+        border-left: none;
+    }
+    .vl-education{
+        border-left: none;
+    }
+    .vl-summary{
+         border-left: 3px solid #5F7161;
+          height: 370%;
+          position: absolute;
+          left: 15%;
+          margin-left: -3px;
+          top: 595%;
+    }
+    .form-control{
+        width: 70%;
+        margin-left: 20%;
+    }
+}
