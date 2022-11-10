@@ -11,7 +11,7 @@ import smtplib
 app = Flask(__name__)
 
 EMAIL = os.environ.get('EMAIL')
-PASSWORD = os.environ.get('EMAIL_P')
+PASSWORD = os.environ.get('PASSWORD')
 
 @app.route("/")
 def home():
