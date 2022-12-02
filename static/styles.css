@@ -245,7 +245,7 @@ ul{
     margin-bottom: 5px;
 }
 
-.html-skill, .css-skill, .python-skill, .content-skill, .microsoft-skill, .design-skill  span{
+.html-skill, .css-skill, .python-skill, .content-skill, .microsoft-skill, .design-skill, .code-skill  span{
     border: 1px solid #5F7161;
 }
 
@@ -273,6 +273,10 @@ ul{
     animation: design-skill 1s linear forwards;
 }
 
+.code-skill{
+    animation: design-skill 1s linear forwards;
+}
+
 @keyframes html-skill {
     100%{
         width: 86%;
@@ -281,7 +285,7 @@ ul{
 
 @keyframes css-skill {
     100%{
-        width: 78%;
+        width: 75%;
     }
 }
 
@@ -293,7 +297,7 @@ ul{
 
 @keyframes content-skill {
     100%{
-        width: 80%;
+        width: 72%;
     }
 }
 
@@ -305,9 +309,10 @@ ul{
 
 @keyframes design-skill {
     100%{
-        width: 85%;
+        width: 80%;
     }
 }
+
 
 /* Resume Section*/
 #resume{
@@ -425,7 +430,7 @@ ul{
 /* Footer */
 
 #footer{
-     padding: 5% 10%;
+     padding: 2% 10%;
      background-color: #D0C9C0;
      text-align: center;
 }
@@ -449,7 +454,7 @@ ul{
 }
 
 /* Mobile Responsiveness */
-@media (max-width: 916px){
+@media (max-width: 900px){
     .vl-experience{
         border-left: none;
     }
